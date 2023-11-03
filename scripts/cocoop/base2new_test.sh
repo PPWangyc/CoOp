@@ -1,7 +1,8 @@
 #!/bin/bash
 
 cd ../..
-
+source ~/.bashrc
+conda activate dassl
 # custom config
 DATA=/scratch/yl6624/Data/
 TRAINER=CoCoOp
@@ -36,3 +37,4 @@ else
     DATASET.NUM_SHOTS ${SHOTS} \
     DATASET.SUBSAMPLE_CLASSES ${SUB}
 fi
+conda deactivate
