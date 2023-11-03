@@ -3,7 +3,7 @@
 cd ../..
 
 # custom config
-DATA=/path/to/datasets
+DATA=/scratch/yl6624/Data/
 TRAINER=CoCoOp
 # TRAINER=CoOp
 

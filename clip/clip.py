@@ -61,7 +61,7 @@ def _download(url: str, root: str = os.path.expanduser("~/.cache/clip")):
 
                 output.write(buffer)
                 loop.update(len(buffer))
-
+    print(f"Downloaded {url} to {download_target}")
     if hashlib.sha256(open(download_target, "rb").read()).hexdigest() != expected_sha256:
         raise RuntimeError(f"Model has been downloaded but the SHA256 checksum does not not match")
 
