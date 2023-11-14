@@ -1,6 +1,6 @@
 #!/bin/bash
 
-DATASET=ucf101
+DATASET=imagenet
 for seed in {1..3}; do
     echo "seed ${seed}"
     sbatch --gres=gpu:rtx8000:1 -N 1 -n 1 --ntasks-per-node=1 --cpus-per-task=8 \

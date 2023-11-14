@@ -12,7 +12,7 @@ DATASET=$1
 SEED=$2
 echo "dataset ${DATASET}"
 echo "seed ${SEED}"
-CFG=vit_b16_c4_ep10_batch1_ctxv1
+CFG=vit_b32_c4_ep10_batch1_ctxv1
 # CFG=vit_b16_ctxv1  # uncomment this when TRAINER=CoOp
 # CFG=vit_b16_ep50_ctxv1  # uncomment this when TRAINER=CoOp and DATASET=imagenet
 SHOTS=16
